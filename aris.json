@@ -1,0 +1,17 @@
+{
+    "Company":{
+        "name": "string",
+        "description": "number"
+    },
+    "User":{
+        "name": "string",
+        "lastName": "string",
+        "description": "number"
+    },
+    "Audit":{
+        "method": "string",
+        "status": "number",
+        "type": "string",
+        "response": "string"
+    }
+}
