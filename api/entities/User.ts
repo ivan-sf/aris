@@ -6,11 +6,11 @@ export class User extends BaseEntity{
     @PrimaryColumn({type:"uuid"})
     @Generated("uuid") id: string;
      
-    @Column()
+    @Column({nullable:true})
     name:string 
-    @Column()
+    @Column({nullable:true})
     lastName:string 
-    @Column()
+    @Column({nullable:true})
     description:number
     @CreateDateColumn()
     created_at:Date

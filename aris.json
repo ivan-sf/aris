@@ -13,5 +13,11 @@
         "status": "number",
         "type": "string",
         "response": "string"
+    },
+    "Locations":{
+        "method": "string",
+        "status": "number",
+        "type": "string",
+        "response": "string"
     }
 }

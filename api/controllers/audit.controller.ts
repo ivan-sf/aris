@@ -1,6 +1,5 @@
 import { Request, Response } from "express"
 import {Audit as Entity} from '../entities/Audit'
-import request from 'request'
 
 export const createAudit = async (req:Request,res:Response) =>{
     try{
@@ -11,7 +10,6 @@ export const createAudit = async (req:Request,res:Response) =>{
         entity.type = type
         entity.response = response
         await entity.save()
-        console.log({"req":req.body})
         res.send({"req":req.body})
     }catch(error){
         if(error instanceof Error){

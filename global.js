@@ -1,0 +1,1 @@
+global.nameFile = "aris.json"; 

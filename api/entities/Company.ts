@@ -2,18 +2,14 @@ import { Column, CreateDateColumn, Entity, PrimaryColumn, PrimaryGeneratedColumn
 
 @Entity()
 
-export class Audit extends BaseEntity{
+export class Company extends BaseEntity{
     @PrimaryColumn({type:"uuid"})
     @Generated("uuid") id: string;
      
-    @Column()
-    method:string 
-    @Column()
-    status:number 
-    @Column()
-    type:string 
-    @Column()
-    response:string
+    @Column({nullable:true})
+    name:string 
+    @Column({nullable:true})
+    description:number
     @CreateDateColumn()
     created_at:Date
     @UpdateDateColumn()
